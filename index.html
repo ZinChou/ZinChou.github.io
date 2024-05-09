@@ -19,7 +19,12 @@
         }
     </script>
 </head>
-
+<style>
+    .flex-container {
+      display: flex;    /* Establishes a flex container */
+      align-items: center;  /* Aligns items vertically in the center */
+    }
+  </style>
 <body>
     <div id="body-wrap">
         <nav class="not_index_bg" id="nav" style="background-image:url(https://api.ixiaowai.cn/api/api.php)">
@@ -63,12 +68,36 @@
                     <div class="card-widget card-announcement">
                         <div class="card-content">
                             <div class="item-headline">
+                                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                <span>教育经历</span>
+                            </div>
+                            <body>
+                                <div class="flex-container">
+                                    <p> 2020-2024 吉林大学&nbsp</p>
+                                    <a href="https://ccst.jlu.edu.cn/" target=“_blank”>计算机科学与技术学院</a>
+                                </div>
+                            </body>
+                            <body>
+                                <div class="flex-container">
+                                    <div> 2024-now  &nbsp南京大学&nbsp</div>
+                                    <a href="https://is.nju.edu.cn" target=“_blank”>智能科学与技术学院</a>
+                                </div>
+                            </body>
+                            
+                            <!-- <div id="hitokoto"></div> -->
+                        </div>
+                    </div>
+
+                    <div class="card-widget card-announcement">
+                        <div class="card-content">
+                            <div class="item-headline">
                                 <i class="fa fa-bullhorn" aria-hidden="true"></i>
                                 <span>一言</span>
                             </div>
                             <div id="hitokoto"></div>
                         </div>
                     </div>
+
                     <div class="card-widget card-announcement">
                         <div class="card-content">
                             <div class="item-headline">
@@ -78,8 +107,36 @@
                             <div id="jinrishici-sentence"></div>
                         </div>
                     </div>
-
-                    <div class="card-widget card-webinfo">
+                    <div class="card-widget card-announcement">
+                        <div class="card-content">
+                            <div class="item-headline">
+                                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                                <span>社交账号</span>
+                            </div>
+                            <div>QQ: 1546250299</div>
+                            <div>微信: BaB_0110</div>
+                            <body>
+                                <div class="flex-container">
+                                    <div>抖音:&nbsp</div>
+                                    <a href="https://www.douyin.com/user/MS4wLjABAAAAyYxDC_MmNGwP-8ZCWvXbRoj3gL88s6ZAGepvK539Lr4" target=“_blank”>zin</a>
+                                </div>
+                            </body>
+                            <body>
+                                <div class="flex-container">
+                                    <div>小红书:&nbsp</div>
+                                    <a href="https://www.xiaohongshu.com/user/profile/6071ba3d0000000001004684" target=“_blank”>overflow</a>
+                                </div>
+                            </body>
+                            <body>
+                                <div class="flex-container">
+                                    <div>微博:&nbsp</div>
+                                    <a href="https://weibo.com/u/7626021032" target=“_blank”>ZinBaB</a>
+                                </div>
+                            </body>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="card-widget card-webinfo">
                         <div class="card-content">
                             <div class="item-headline">
                                 <i class="fa fa-line-chart" aria-hidden="true"></i>
@@ -96,7 +153,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <article id="page">
                     <div class="article-container">
@@ -105,56 +162,38 @@
                         </meting-js>
                         <hr>
 
-                        <h2>技能</h2>
+                        <h2>爱好</h2>
                         <div class="skillbox">
                             <div class="skillbar">
                                 <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #FF0066 0%, #FF00CC 100%); width: 75%">
-                                    <span>Java</span>
+                                    style="background: linear-gradient(to right, #FF0066 0%, #FF00CC 100%); width: 80%">
+                                    <span>篮球</span>
                                 </div>
                                 <div class="skill-bar-percent">75%</div>
                             </div>
+
                             <div class="skillbar">
                                 <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #9900FF 0%, #CC66FF 100%); width: 40%">
-                                    <span>前端</span>
+                                    style="background: linear-gradient(to right, #9900FF 0%, #CC66FF 100%); width: 50%">
+                                    <span>LoLm</span>
                                 </div>
                                 <div class="skill-bar-percent">40%</div>
                             </div>
+
                             <div class="skillbar">
                                 <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #2196F3 0%, #42A5F5 100%); width: 60%">
-                                    <span>Spring</span>
+                                    style="background: linear-gradient(to right, #2196F3 0%, #42A5F5 100%); width: 90%">
+                                    <span>音乐</span>
                                 </div>
                                 <div class="skill-bar-percent">60%</div>
                             </div>
+
                             <div class="skillbar">
                                 <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #00BCD4 0%, #80DEEA 100%); width: 70%">
-                                    <span>SpringMVC</span>
+                                    style="background: linear-gradient(to right, #00BCD4 0%, #80DEEA 100%); width: 60%">
+                                    <span>旅游</span>
                                 </div>
                                 <div class="skill-bar-percent">70%</div>
-                            </div>
-                            <div class="skillbar">
-                                <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #00BCD4 0%, #f54009 100%); width: 80%">
-                                    <span>SpringBoot</span>
-                                </div>
-                                <div class="skill-bar-percent">80%</div>
-                            </div>
-                            <div class="skillbar">
-                                <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #4CAF50 0%, #81C784 100%); width: 60%">
-                                    <span>Mybatis</span>
-                                </div>
-                                <div class="skill-bar-percent">60%</div>
-                            </div>
-                            <div class="skillbar">
-                                <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #FFEB3B 0%, #FFF176 100%); width: 75%">
-                                    <span>数据结构与算法</span>
-                                </div>
-                                <div class="skill-bar-percent">75%</div>
                             </div>
                         </div>
 
