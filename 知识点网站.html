@@ -607,11 +607,46 @@ header, .context-menu, .megamenu-content, footer{
     background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
 }
 
+/* 初始化CSS计数器 */
+h1 {
+    counter-reset: h2;
+}
 
+h2 {
+    counter-reset: h3;
+}
+
+h3 {
+    counter-reset: h4;
+}
+
+h4 {
+    counter-reset: h5;
+}
+
+h5 {
+    counter-reset: h6;
+}
+
+/* 将计数器结果放入标题中 */
+#write h2:before {
+    counter-increment: h2;
+    content: counter(h2) ". ";
+}
+
+#write h3:before,
+h3.md-focus.md-heading:before /** 覆盖聚焦标题的默认样式 */ {
+    counter-increment: h3;
+    content: counter(h2) "." counter(h3) ". ";
+}
+
+#write h4:before {
+    /* 这里的内容不完整，可能是继续编号的逻辑 */
+}
 
 </style><title>知识点网站</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='知识点网站'><span>知识点网站</span></h1><ol start='' ><li><p><a href='http://zh.gluon.ai/chapter_recurrent-neural-networks/gru.html'><span>GRU</span></a></p></li><li><p><a href='https://blog.csdn.net/ShowMeAI/article/details/123406621'><span>LightGBM</span></a></p></li><li><p><a href='https://blog.csdn.net/yugongpeng/article/details/135265839'><span>Polars</span></a></p></li></ol></div></div>
+<div id='write'  class=''><h1 id='知识点网站'><span>知识点网站</span></h1><ol start='' ><li><p><a href='http://zh.gluon.ai/chapter_recurrent-neural-networks/gru.html'><span>GRU</span></a></p></li><li><p><a href='https://blog.csdn.net/ShowMeAI/article/details/123406621'><span>LightGBM</span></a></p></li><li><p><a href='https://blog.csdn.net/yugongpeng/article/details/135265839'><span>Polars</span></a></p></li><li><p><a href='https://www.cnblogs.com/bentuwuying/p/6690836.html'><span>RankNet</span></a></p></li></ol></div></div>
 </body>
 </html>
